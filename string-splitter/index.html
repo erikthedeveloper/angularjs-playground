@@ -24,7 +24,22 @@
 
     <div>
       <h3>Apply Magic</h3>
-      <p>
+
+      <p class="help-block">
+        <ol>
+          <li>
+            Strip out everything except the first letter of each word
+          </li>
+          <li>
+            Replace all puncuation with spaces
+          </li>
+          <li>
+            Split paragraphs into sentences
+          </li>
+        </ol>
+      </p>
+
+      <p class="lead text-center">
         {{ the_string | magicFilter }}
       </p>
     </div>
